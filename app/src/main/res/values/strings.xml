@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">My Application</string>
+
+    <string name="userLoginText">login</string>
+    <string name="userPasswordText">Password</string>
+    <string name="userLoginBtmText">Sign in</string>
+    <string name="userLoginErrorText">Incorrect</string>
+
+    <string name="userWelcomeText">Welcome</string>
+    <string name="counterActBtmText">Counter</string>
+    <string name="imageActBtmText">Image</string>
+    <string name="intenseActBtmText">Intense</string>
+
+
+
+</resources>

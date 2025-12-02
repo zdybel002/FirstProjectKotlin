@@ -11,25 +11,23 @@
         android:id="@+id/phoneInput"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="52dp"
         android:ems="10"
         android:hint="@string/phoneCallText"
         android:inputType="phone"
         app:layout_constraintTop_toTopOf="parent"
-        tools:layout_editor_absoluteX="100dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="32dp" />
 
     <Button
-        android:id="@+id/googleBtm"
+        android:id="@+id/phoneBtm"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="76dp"
-        android:text="@string/phoneGoogleBtm"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.487"
+        android:text="@string/phoneCallBtm"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/phoneInput"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/googleInput"
-        app:layout_constraintVertical_bias="0.261" />
+        app:layout_constraintEnd_toEndOf="parent" />
 
     <EditText
         android:id="@+id/mapInput"
@@ -38,10 +36,20 @@
         android:ems="10"
         android:hint="@string/phoneMapText"
         android:inputType="text"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
+        android:layout_marginTop="48dp"
+        app:layout_constraintTop_toBottomOf="@+id/phoneBtm"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="258dp" />
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/mapBtm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/phoneMapBtm"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/mapInput"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
 
     <EditText
         android:id="@+id/googleInput"
@@ -50,31 +58,19 @@
         android:ems="10"
         android:hint="@string/phoneGoogleText"
         android:inputType="text"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
+        android:layout_marginTop="48dp"
+        app:layout_constraintTop_toBottomOf="@+id/mapBtm"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="497dp" />
+        app:layout_constraintEnd_toEndOf="parent" />
 
     <Button
-        android:id="@+id/mapBtm"
+        android:id="@+id/googleBtm"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/phoneMapBtm"
-        app:layout_constraintBottom_toTopOf="@+id/googleInput"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        android:text="@string/phoneGoogleBtm"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/googleInput"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/mapInput"
-        app:layout_constraintVertical_bias="0.102" />
-
-    <Button
-        android:id="@+id/phoneBtm"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/phoneCallBtm"
-        app:layout_constraintBottom_toTopOf="@+id/mapInput"
-        app:layout_constraintTop_toBottomOf="@+id/phoneInput"
-        app:layout_constraintVertical_bias="0.141"
-        tools:layout_editor_absoluteX="160dp" />
+        app:layout_constraintEnd_toEndOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

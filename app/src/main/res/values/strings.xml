@@ -27,11 +27,14 @@
 
 <!--    Phone Activity-->
 
-    <string name="phoneCallText">call to some number</string>
-    <string name="phoneCallBtm">call to some number</string>
+    <string name="phoneCallText">call to number</string>
+    <string name="phoneCallBtm">call</string>
 
-    <string name="phoneMapText">Look for in maps</string>
-    <string name="phoneMapTExt">Look for in maps</string>
+    <string name="phoneMapText">Look in maps</string>
+    <string name="phoneMapBtm">Google Maps</string>
+
+    <string name="phoneGoogleText">Look in google</string>
+    <string name="phoneGoogleBtm">Google</string>
 
 
 

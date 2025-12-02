@@ -1,6 +1,6 @@
 <resources>
 
-<!--    Conter Strings-->
+    <!--    Conter Strings-->
 
     <string name="btmPlus">+</string>
     <string name="btmMinus">-</string>
@@ -22,6 +22,16 @@
     <string name="counterActBtmText">Counter</string>
     <string name="imageActBtmText">Image</string>
     <string name="intenseActBtmText">Intense</string>
+
+
+
+<!--    Phone Activity-->
+
+    <string name="phoneCallText">call to some number</string>
+    <string name="phoneCallBtm">call to some number</string>
+
+    <string name="phoneMapText">Look for in maps</string>
+    <string name="phoneMapTExt">Look for in maps</string>
 
 
 

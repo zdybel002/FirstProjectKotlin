@@ -60,6 +60,15 @@ class MainActivity : AppCompatActivity() {
             )
         }
 
+        binding.searchBtm.setOnClickListener {
+            startActivity(
+                Intent(
+                    this,
+                    PhoneActivity::class.java
+                )
+            )
+        }
+
 
     }
 

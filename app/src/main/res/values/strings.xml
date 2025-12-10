@@ -18,10 +18,13 @@
     <string name="userLoginBtmText">Sign in</string>
     <string name="userLoginErrorText">Incorrect</string>
 
+
+<!--    activity Main-->
     <string name="userWelcomeText">Welcome</string>
     <string name="counterActBtmText">Counter</string>
     <string name="imageActBtmText">Image</string>
     <string name="intenseActBtmText">Intense</string>
+    <string name="searchActBtmText">Search</string>
 
 
 

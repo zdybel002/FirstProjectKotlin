@@ -5,72 +5,74 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/mygradient"
     tools:context=".PhoneActivity">
 
     <EditText
         android:id="@+id/phoneInput"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
         android:ems="10"
         android:hint="@string/phoneCallText"
         android:inputType="phone"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="32dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/phoneBtm"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/phoneCallBtm"
         android:layout_marginTop="8dp"
-        app:layout_constraintTop_toBottomOf="@+id/phoneInput"
+        android:text="@string/phoneCallBtm"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/phoneInput" />
 
     <EditText
         android:id="@+id/mapInput"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
         android:ems="10"
         android:hint="@string/phoneMapText"
         android:inputType="text"
-        android:layout_marginTop="48dp"
-        app:layout_constraintTop_toBottomOf="@+id/phoneBtm"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/phoneBtm" />
 
     <Button
         android:id="@+id/mapBtm"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/phoneMapBtm"
         android:layout_marginTop="8dp"
-        app:layout_constraintTop_toBottomOf="@+id/mapInput"
+        android:text="@string/phoneMapBtm"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/mapInput" />
 
     <EditText
         android:id="@+id/googleInput"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
         android:ems="10"
         android:hint="@string/phoneGoogleText"
         android:inputType="text"
-        android:layout_marginTop="48dp"
-        app:layout_constraintTop_toBottomOf="@+id/mapBtm"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/mapBtm" />
 
     <Button
         android:id="@+id/googleBtm"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
         android:text="@string/phoneGoogleBtm"
-        android:layout_marginTop="8dp"
-        app:layout_constraintTop_toBottomOf="@+id/googleInput"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.509"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/googleInput" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

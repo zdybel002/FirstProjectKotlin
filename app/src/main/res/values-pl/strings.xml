@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="btmReset">Zresetuj</string>
+    <string name="checkBoxAllow">Pozwol ujemne wartosci</string>
+    <string name="btmSet">Zastosuj</string>
+    <string name="defaultValue">Wprowadz wartosc domyslna</string>
+    <string name="countByPair">Licz Parami</string>
+    <string name="app_name">Moja Apka</string>
+    <string name="userPasswordText">Haslo</string>
+    <string name="userLoginBtmText">Zaloguj</string>
+    <string name="userLoginErrorText">Blad</string>
+    <string name="userWelcomeText">Siema</string>
+    <string name="counterActBtmText">Licznik</string>
+    <string name="imageActBtmText">Zdjiecie</string>
+    <string name="intenseActBtmText">Przejście</string>
+    <string name="searchActBtmText">Szukaj</string>
+    <string name="mainListUsers">Zobacz liste użytkowników</string>
+    <string name="phoneCallText">Dzwon na numer</string>
+    <string name="phoneCallBtm">Zadzwon</string>
+    <string name="phoneMapText">Zobac na mapie</string>
+    <string name="phoneGoogleText">Zobac w Google</string>
+</resources>

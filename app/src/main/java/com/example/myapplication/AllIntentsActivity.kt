@@ -1,21 +1,24 @@
 package com.example.myapplication
 
+import androidx.appcompat.app.AppCompatActivity
+import com.example.myapplication.databinding.ActivityAllIntentsBinding
+
 import android.content.Intent
 import android.os.Bundle
 import androidx.activity.enableEdgeToEdge
-import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
-import com.example.myapplication.databinding.ActivityMainBinding
+import com.example.myapplication.listOfUsers.PersonActivity
 
-class MainActivity : AppCompatActivity() {
 
-    private lateinit var binding: ActivityMainBinding
+class AllIntentsActivity: AppCompatActivity() {
+
+    private lateinit var binding: ActivityAllIntentsBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        binding = ActivityMainBinding.inflate(layoutInflater)
+        binding = ActivityAllIntentsBinding.inflate(layoutInflater)
 
         enableEdgeToEdge()
 
@@ -69,9 +72,17 @@ class MainActivity : AppCompatActivity() {
             )
         }
 
+        binding.listUserBtm.setOnClickListener {
+            startActivity(
+                Intent(
+                    this,
+                    PersonActivity::class.java
+                )
+            )
+        }
+
+
+
 
     }
-
-
 }
-

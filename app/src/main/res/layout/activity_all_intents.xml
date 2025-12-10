@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/mygradient"
-    tools:context=".MainActivity">
+    tools:context=".AllINtenses">
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline4"
@@ -79,6 +79,17 @@
         android:layout_marginTop="48dp"
         android:text="@string/searchActBtmText"
         app:layout_constraintEnd_toStartOf="@+id/guideline6"
+        app:layout_constraintStart_toStartOf="@+id/guideline4"
+        app:layout_constraintTop_toBottomOf="@+id/intenseBtm" />
+
+    <Button
+        android:id="@+id/listUserBtm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="116dp"
+        android:text="@string/mainListUsers"
+        app:layout_constraintEnd_toStartOf="@+id/guideline6"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="@+id/guideline4"
         app:layout_constraintTop_toBottomOf="@+id/intenseBtm" />
 </androidx.constraintlayout.widget.ConstraintLayout>

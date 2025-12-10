@@ -51,7 +51,7 @@ class LoggingActivity : AppCompatActivity() {
 
             if(userLogin.isNotEmpty() && userPassword.contentEquals(CORRECT_PASSWORD)){
 
-                val intent = Intent(this, MainActivity::class.java)
+                val intent = Intent(this, AllIntentsActivity::class.java)
                 intent.putExtra("userName", userLogin.toString())
                 startActivity(intent)
                 finish()

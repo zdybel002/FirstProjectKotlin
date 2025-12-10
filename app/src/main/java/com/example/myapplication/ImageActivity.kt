@@ -6,8 +6,9 @@ import android.widget.ImageView
 import android.widget.SeekBar
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
+
+
+
 
 class ImageActivity : AppCompatActivity() {
 
@@ -39,7 +40,9 @@ class ImageActivity : AppCompatActivity() {
         // ustawienie początkowej ikony
         image.setImageResource(icons.random())
 
-        // SeekBar przezroczystości
+        // ------------------------------
+        //  PRZEZROCZYSTOŚĆ
+        // ------------------------------
         alphaSeek.max = 255
         alphaSeek.progress = 255
         alphaSeek.setOnSeekBarChangeListener(object : SeekBar.OnSeekBarChangeListener {
@@ -50,26 +53,32 @@ class ImageActivity : AppCompatActivity() {
             override fun onStopTrackingTouch(sb: SeekBar?) {}
         })
 
-        // SeekBar rozmiaru
-        sizeSeek.max = 300
-        sizeSeek.progress = 100
+        // ------------------------------
+        //  POWIĘKSZANIE OBRAZU (0.5x – 1.5x)
+        // ------------------------------
+        sizeSeek.max = 100       // zakres dla wygody
+        sizeSeek.progress = 50   // start = 1.0x
         sizeSeek.setOnSeekBarChangeListener(object : SeekBar.OnSeekBarChangeListener {
             override fun onProgressChanged(sb: SeekBar?, progress: Int, fromUser: Boolean) {
-                val scale = resources.displayMetrics.density
-                val newSizePx = ((progress + 50) * scale).toInt() // minimalny rozmiar 50dp
-                val lp = image.layoutParams
-                lp.width = newSizePx
-                lp.height = newSizePx
-                image.layoutParams = lp
+
+                // skala od 0.5 do 1.5
+                val scale = 0.5f + (progress / 100f)   // min 0.5, max 1.5
+
+                // skaluje obraz, NIE zmienia wielkości ImageView
+                image.scaleX = scale
+                image.scaleY = scale
             }
             override fun onStartTrackingTouch(sb: SeekBar?) {}
             override fun onStopTrackingTouch(sb: SeekBar?) {}
         })
 
-        // przycisk zmieniający ikonę
+        // ------------------------------
+        //  ZMIANA IKONY
+        // ------------------------------
         btnChange.setOnClickListener {
             image.setImageResource(icons.random())
         }
     }
 }
+
 

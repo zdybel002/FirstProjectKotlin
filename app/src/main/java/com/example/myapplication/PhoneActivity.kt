@@ -8,7 +8,6 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
-import com.example.myapplication.databinding.ActivityMainBinding
 import com.example.myapplication.databinding.ActivityPhoneBinding
 
 class PhoneActivity : AppCompatActivity() {

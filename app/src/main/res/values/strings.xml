@@ -2,8 +2,8 @@
 
     <!--    Conter Strings-->
 
-    <string name="btmPlus">+</string>
-    <string name="btmMinus">-</string>
+    <string name="btmPlus" translatable="false">+</string>
+    <string name="btmMinus" translatable="false">-</string>
     <string name="btmReset">Reset</string>
     <string name="checkBoxAllow">Allow negative number</string>
     <string name="btmSet">Set your number</string>
@@ -13,7 +13,7 @@
 
     <string name="app_name">My Application</string>
 
-    <string name="userLoginText">login</string>
+    <string name="userLoginText" translatable="false">login</string>
     <string name="userPasswordText">Password</string>
     <string name="userLoginBtmText">Sign in</string>
     <string name="userLoginErrorText">Incorrect</string>
@@ -25,6 +25,7 @@
     <string name="imageActBtmText">Image</string>
     <string name="intenseActBtmText">Intense</string>
     <string name="searchActBtmText">Search</string>
+    <string name="mainListUsers">Look list of users</string>
 
 
 
@@ -34,10 +35,10 @@
     <string name="phoneCallBtm">call</string>
 
     <string name="phoneMapText">Look in maps</string>
-    <string name="phoneMapBtm">Google Maps</string>
+    <string name="phoneMapBtm" translatable="false">Google Maps</string>
 
     <string name="phoneGoogleText">Look in google</string>
-    <string name="phoneGoogleBtm">Google</string>
+    <string name="phoneGoogleBtm" translatable="false">Google</string>
 
 
 

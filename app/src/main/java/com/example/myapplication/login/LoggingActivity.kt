@@ -1,4 +1,4 @@
-package com.example.myapplication
+package com.example.myapplication.login
 
 import android.content.Intent
 import android.os.Bundle
@@ -8,6 +8,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import androidx.core.widget.addTextChangedListener
+import com.example.myapplication.AllIntentsActivity
 import com.example.myapplication.databinding.ActivityLogingBinding
 
 class LoggingActivity : AppCompatActivity() {
@@ -34,7 +35,7 @@ class LoggingActivity : AppCompatActivity() {
         binding.userLoggingBtm.isEnabled = false
 
 
-        binding.userLooggingEt.addTextChangedListener{
+        binding.userLooggingEt.addTextChangedListener {
             updateButtonState()
         }
 

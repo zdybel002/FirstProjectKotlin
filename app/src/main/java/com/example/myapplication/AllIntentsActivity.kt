@@ -9,6 +9,10 @@ import androidx.activity.enableEdgeToEdge
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.example.myapplication.listOfUsers.PersonActivity
+import com.example.myapplication.mainComponets.CounterActivity
+import com.example.myapplication.mainComponets.ImageActivity
+import com.example.myapplication.mainComponets.IntenseActivity
+import com.example.myapplication.mainComponets.SearchActivity
 
 
 class AllIntentsActivity: AppCompatActivity() {
@@ -40,7 +44,7 @@ class AllIntentsActivity: AppCompatActivity() {
             startActivity(
                 Intent(
                     this,
-                    ActivityCounter::class.java
+                    CounterActivity::class.java
                 )
             )
         }
@@ -67,7 +71,7 @@ class AllIntentsActivity: AppCompatActivity() {
             startActivity(
                 Intent(
                     this,
-                    PhoneActivity::class.java
+                    SearchActivity::class.java
                 )
             )
         }

@@ -17,23 +17,23 @@
 
 
         <activity
-            android:name=".PhoneActivity"
+            android:name=".mainComponets.SearchActivity"
             android:exported="false">
 
         </activity>
 
         <activity
-            android:name=".IntenseActivity"
+            android:name=".mainComponets.IntenseActivity"
             android:exported="false" />
 
         <activity
-            android:name=".ImageActivity"
+            android:name=".mainComponets.ImageActivity"
             android:exported="false">
 
         </activity>
 
         <activity
-            android:name=".LoggingActivity"
+            android:name=".login.LoggingActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -43,7 +43,7 @@
 
         </activity>
         <activity
-            android:name=".ActivityCounter"
+            android:name=".mainComponets.CounterActivity"
             android:exported="false" >
         </activity>
 

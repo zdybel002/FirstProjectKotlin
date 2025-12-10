@@ -1,4 +1,4 @@
-package com.example.myapplication
+package com.example.myapplication.mainComponets
 
 import android.os.Bundle
 import android.widget.Toast
@@ -8,8 +8,7 @@ import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.example.myapplication.databinding.ActivityCounterBinding
 
-
-class ActivityCounter : AppCompatActivity() {
+class CounterActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityCounterBinding
 
@@ -106,4 +105,3 @@ class ActivityCounter : AppCompatActivity() {
         binding.viewCounter.text = aktualnaWartosc.toString()
     }
 }
-

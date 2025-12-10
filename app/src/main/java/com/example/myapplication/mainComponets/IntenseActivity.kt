@@ -1,10 +1,11 @@
-package com.example.myapplication
+package com.example.myapplication.mainComponets
 
 import android.os.Bundle
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import com.example.myapplication.R
 
 class IntenseActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -18,4 +19,3 @@ class IntenseActivity : AppCompatActivity() {
         }
     }
 }
-

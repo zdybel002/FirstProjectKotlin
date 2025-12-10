@@ -1,4 +1,4 @@
-package com.example.myapplication
+package com.example.myapplication.mainComponets
 
 import android.os.Bundle
 import android.widget.Button
@@ -6,9 +6,7 @@ import android.widget.ImageView
 import android.widget.SeekBar
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-
-
-
+import com.example.myapplication.R
 
 class ImageActivity : AppCompatActivity() {
 
@@ -80,5 +78,3 @@ class ImageActivity : AppCompatActivity() {
         }
     }
 }
-
-
